@@ -1,0 +1,73 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ES2022",                                        /* Поднимаем цель до ES2022, чтобы понимать .at() */
+    "module": "es2020",
+    "lib": ["ES2022", "dom", "webworker", "DOM.Iterable"],    /* Добавляем библиотеку ES2022 */
+    "allowJs": true,
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "sourceMap": true,
+    "removeComments": false,
+    "noEmit": true,
+    "downlevelIteration": true,
+    "isolatedModules": true,
+
+    /* Strict Type-Checking Options */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true,                                     /* Игнорируем ошибки в сторонних библиотеках */
+    "useDefineForClassFields": false,
+
+    /* Module Resolution Options */
+    "moduleResolution": "bundler",
+    "paths": {
+      "solid-js": ["./src/vendor/solid"],
+      "solid-js/web": ["./src/vendor/solid/web"],
+      "solid-js/store": ["./src/vendor/solid/store"],
+      "solid-js/jsx-runtime": ["./src/vendor/solid"],
+      "solid-js/jsx-dev-runtime": ["./src/vendor/solid"],
+      "solid-transition-group": ["./src/vendor/solid-transition-group"],
+      "@components/*": ["./src/components/*"],
+      "@helpers/*": ["./src/helpers/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@stores/*": ["./src/stores/*"],
+      "@lib/*": ["./src/lib/*"],
+      "@appManagers/*": ["./src/lib/appManagers/*"],
+      "@richTextProcessor/*": ["./src/lib/richTextProcessor/*"],
+      "@environment/*": ["./src/environment/*"],
+      "@customEmoji/*": ["./src/lib/customEmoji/*"],
+      "@rlottie/*": ["./src/lib/rlottie/*"],
+      "@config/*": ["./src/config/*"],
+      "@vendor/*": ["./src/vendor/*"],
+      "@layer": ["./src/layer.d.ts"],
+      "@types": ["./src/types.d.ts"],
+      "@/*": ["./src/*"]
+    },
+    "types": [
+      "vite/client",
+      "vitest/globals",
+      "chrome",
+      "dom-webcodecs"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  },
+  "exclude": [
+    "node_modules",
+    "public",
+    "dist",
+    "coverage",
+    "src/scripts",
+    "src/solid",
+    "src/opus-recorder",
+    "src/vendor/**/*.js",
+    "*.js",
+    "*.cjs",
+    "tweb-design",
+    "rlottie_with_printf"
+  ]
+}
