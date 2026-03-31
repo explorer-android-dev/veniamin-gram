@@ -197,7 +197,7 @@ async function handlePushNotificationObject(obj: PushNotificationObject) {
     }
 
     const tag = 'fix';
-    const notificationPromise = ctx.registration.showNotification('Telegram Web', {
+    const notificationPromise = ctx.registration.showNotification('Veniamin-gram', {
       body: _lang.push_message_error,
       icon: NOTIFICATION_ICON_PATH,
       tag,
