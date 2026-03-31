@@ -35,9 +35,9 @@ if(isDEV) {
 const handlebarsPlugin = handlebars({
   context: {
     title: 'Veniamin-gram',
-    description: 'Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.',
-    url: 'https://web.telegram.org/k/',
-    origin: 'https://web.telegram.org/'
+    description: 'Veniamin-gram fork for TelegramWebK.',
+    url: 'https://veniamin-gram.netlify.app/',
+    origin: 'https://veniamin-gram.netlify.app/'
   }
 });
 
